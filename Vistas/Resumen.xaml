@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="candinoExamen.Vistas.Resumen"
+             Title="Resumen">
+    <VerticalStackLayout>
+        <Label x:Name="lblUsuario"
+               FontSize="14"
+               TextColor="DarkSalmon"
+               HorizontalTextAlignment="End"/>
+        <Label 
+            Text="RESUMEN"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="lblNombreR"
+                   Text="Nombre"
+                   FontSize="20"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="txtNombreR"
+                   IsReadOnly="True"
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+            
+            <Label x:Name="lblApellidoR"
+                   Text="Apellido"
+                   FontSize="20"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="txtApellidoR"
+                   IsReadOnly="True"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+            
+            <Label x:Name="lblEdad"
+                   Text="Edad"
+                   FontSize="20"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="txtEdadR"
+                   IsReadOnly="True"                  
+                   Grid.Row="2"
+                   Grid.Column="1"/>
+
+            <Label x:Name="dpFechaR"
+                   Text="Fecha"
+                   FontSize="20"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="txtFechar"
+                   IsReadOnly="True"                                    
+                   Grid.Row="3"
+                   Grid.Column="1"/>
+
+            <Label x:Name="lblCiudadR"
+                   Text="Ciudad"
+                   FontSize="20"
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="txtCiudadR"
+                   IsReadOnly="True"                                                     
+                   Grid.Row="4"
+                   Grid.Column="1"/>
+
+            <Label x:Name="lblPaisR"
+                   Text="País"
+                   FontSize="20"
+                   Grid.Row="5"
+                   Grid.Column="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            
+            <Entry x:Name="txtPaisR"
+                   IsReadOnly="True"                                                     
+                   Grid.Row="5"
+                   Grid.Column="1"/>
+
+            <Label x:Name="lblMontoInicialR"
+                   Text="Monto Inicial"
+                   FontSize="20"
+                   Grid.Row="6"
+                   Grid.Column="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="txtMInicialR"
+                   IsReadOnly="True"                                                     
+                   Grid.Row="6"
+                   Grid.Column="1"/>
+
+            <Label x:Name="lblPagoMensualR"
+                   Text="Pago Mensual"
+                   FontSize="20"
+                   Grid.Row="7"
+                   Grid.Column="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="txtPMensualR"
+                   IsReadOnly="True"                                                     
+                   Grid.Row="7"
+                   Grid.Column="1"/>
+
+            <Label x:Name="lblPagoTotal"
+                   Text="Pago Total"
+                   FontSize="20"
+                   Grid.Row="8"
+                   Grid.Column="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Entry x:Name="txtPagoTotalR"
+                   IsReadOnly="True"                                                     
+                   Grid.Row="8"
+                   Grid.Column="1"/>
+        </Grid>
+
+        <Button x:Name="btnCerrarSesion"
+                    Text="Cerrar Sesión"
+                    Clicked="btnCerrarSesion_Clicked"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>

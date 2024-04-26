@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="candinoExamen.Vistas.AcercaDe"
+             Title="AcercaDe">
+    <VerticalStackLayout>
+        <Label 
+            Text="ACERCA DEL SISTEMA"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="lblNombre"
+               Text="Nombre"
+               FontSize="20"
+               Grid.Row="0"
+               Grid.Column="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <Entry x:Name="txtNombre"
+               Text="Carlos Andino Pérez"
+               IsReadOnly="True"
+               Grid.Row="0"
+               Grid.Column="1"/>
+
+        <Label x:Name="lblCurso"
+               Text="Curso"
+               FontSize="20"
+               Grid.Row="1"
+               Grid.Column="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <Entry x:Name="txtCurso"
+               Text="Séptimo A"
+               IsReadOnly="True"
+               Grid.Row="1"
+               Grid.Column="1"/>
+
+        <Label x:Name="lblCarrera"
+               Text="Carrera"
+               FontSize="20"
+               Grid.Row="2"
+               Grid.Column="0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <Entry x:Name="txtCarrera"
+               Text="Informática"
+               IsReadOnly="True"
+               Grid.Row="2"
+               Grid.Column="1"/>
+
+        </Grid>
+        
+    </VerticalStackLayout>
+</ContentPage>
